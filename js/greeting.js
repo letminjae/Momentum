@@ -7,8 +7,8 @@ const HIDDEN = "hidden";
 
 function loginSubmit(event){
     event.preventDefault();
-    loginForm.classList.add(HIDDEN);
     const username = loginInput.value;
+    loginForm.classList.add(HIDDEN);
     localStorage.setItem(USERNAME_KEY, username);
     paintGreeting(username);
 }
