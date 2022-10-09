@@ -1,3 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#todo-form input {
+  width: 100%;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  color: aqua;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  z-index: 1;
+  border: none;
+  outline: none;
+  font-size: 1.25em;
+}
+
+#todo-form input::placeholder {
+  color: aqua;
+}
+
+#todo-list {
+  position: relative;
+  list-style: none;
+  color: aqua;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#todo-list button {
+  background-color: transparent;
+  position: absolute;
+  transform: translate(50%, 50%);
+  border: none;
+  cursor: pointer;
+}
+
 .hidden {
   display: none;
 }
@@ -14,53 +63,75 @@ img {
   opacity: 70%;
 }
 
-#clock{
+#clock {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 36px;
   text-align: center;
-  color : aqua;
+  color: aqua;
 }
 
-#greeting{
+#greeting {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 48px;
   text-align: center;
-  color : aqua;
+  color: aqua;
 }
 
-/* #login-form{
+#login-form{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 48px;
-  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.25em;
+  font-weight: 600;
   color : aqua;
-} */
+}
+
+#login-form input {
+  background-color: transparent;
+  color: aqua;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  border: none;
+  outline: none;
+}
+
+#login-form button {
+  background-color: #242424;
+  width: 64px;
+  height: 23px;
+  border: none;
+  border-radius: 10px;
+  color: aqua;
+  cursor: pointer;
+}
+
+#login-form input::placeholder {
+  color: aqua;
+}
 
 #quote {
   width: 600px;
   position: absolute;
-  bottom: 3%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 24px;
   text-align: center;
-  color : aqua;
+  color: aqua;
   z-index: 2;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25em;
+  font-weight: 550;
+  position: absolute;
+  top: 16px;
+  right: 36px;
 }
