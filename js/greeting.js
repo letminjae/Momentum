@@ -9,8 +9,8 @@ const HIDDEN = "hidden";
 function loginSubmit(event){
     event.preventDefault();
     const username = loginInput.value;
-    loginForm.classList.add(HIDDEN);
     localStorage.setItem(USERNAME_KEY, username);
+    loginForm.classList.add(HIDDEN);
     paintGreeting(username);
 }
 
@@ -26,5 +26,6 @@ if(savedUsername === null){
     loginForm.classList.remove(HIDDEN);
     loginForm.addEventListener("submit", loginSubmit);
 }else{
+    loginForm.classList.add(HIDDEN);
     paintGreeting(savedUsername);
 }
